@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><img src="logo.webp" alt="Marmeto Logo" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><img src="cart-icon.webp" alt="Cart" class="cart-icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cart-container">
+            <!-- Cart Items -->
+            <div class="cart-items">
+                <h1>Cart</h1>
+                <div id="cart-items-list">
+                    <!-- Example Items -->
+                    <div class="cart-item">
+                        <p>Product 1 - $10</p>
+                        <input type="number" value="1">
+                        <button class="remove-item">Remove</button>
+                    </div>
+                    <div class="cart-item">
+                        <p>Product 2 - $15</p>
+                        <input type="number" value="2">
+                        <button class="remove-item">Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart Totals -->
+            <div class="cart-totals">
+                <h2>Cart Totals</h2>
+                <div>
+                    <p>Subtotal: <span id="subtotal">$40</span></p>
+                    <p>Total: <span id="total">$40</span></p>
+                </div>
+                <button id="checkout-button">Check Out</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Quality products guaranteed | Warranty Protection</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
